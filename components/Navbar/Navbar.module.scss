@@ -1,0 +1,29 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  box-shadow: none;
+  border-bottom: none;
+  background: white;
+  height: 92px;
+  padding: 10px;
+  color: #000000;
+
+  .container {
+    width: 100%;
+    max-width: 2440px;
+    margin: 0 auto;
+    padding: 0 40px;
+
+    .navContent {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+}
