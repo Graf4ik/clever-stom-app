@@ -1,5 +1,6 @@
 import React, { FC } from 'react';
 import styles from './Navbar.module.scss';
+import Link from "next/link";
 
 const Navbar: FC = () => {
   return (
@@ -7,10 +8,12 @@ const Navbar: FC = () => {
       <div className={styles.container}>
         <div className={styles.navContent}>
             {/* Логотип */}
-            <div className={styles.logoText}>
-                <img src="/logo.jpg" width={50}/>
+            <div className={styles.logo}>
+                <Link href="/">
+                    <img src="/logo.png" width={50}/>
+                </Link>
+                <div className={styles.logoText}> Стомотология <br /> Клевер</div>
             </div>
-            Клевер
         </div>
       </div>
     </nav>

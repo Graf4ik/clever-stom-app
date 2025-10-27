@@ -3,5 +3,61 @@
   background: #f7f6f2;
   color: #222;
   padding: 0 0 4rem 0;
-  font-family: 'Montserrat', 'Arial', sans-serif;
+  margin-top: 90px;
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+
+    .contacts {
+      width: 30%;
+      margin-top: 15%;
+      color: #41543f;
+      font-size: 22px;
+      font-family: 'Gilroy', sans-serif;
+
+      .contactsContent {
+        display: flex;
+        flex-direction: column;
+        margin-right: 20px;
+      }
+
+      .messengers {
+        margin-top: 20px;
+
+        .link {
+          margin: 20px 0;
+        }
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      .contactBtn {
+        margin-top: 20px;
+        padding: 20px;
+        font-size: 16px;
+        background: #ffffff;
+        color: #41543f;
+
+        &:hover {
+          background: #000000;
+          color: #ffffff;
+        }
+      }
+    }
+
+    .photo {
+      width: 70%;
+      display: flex;
+      justify-content: center;
+    }
+  }
 }
