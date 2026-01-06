@@ -1,0 +1,205 @@
+.prices {
+  margin-top: 80px;
+  padding-bottom: 80px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.hero {
+  padding: 64px 0 32px;
+  background: linear-gradient(135deg, #f6f9f4, #ffffff);
+}
+
+.title {
+  font-size: 36px;
+  line-height: 1.2;
+  margin-bottom: 16px;
+  color: var(--primary-color);
+}
+
+.subtitle {
+  max-width: 640px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555;
+}
+
+.sections {
+  padding: 32px 0 16px;
+}
+
+.sectionCard {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px 20px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.04);
+  margin-bottom: 24px;
+}
+
+.sectionTitle {
+  font-size: 22px;
+  margin-bottom: 16px;
+  color: var(--primary-color);
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  column-gap: 8px;
+  font-size: 15px;
+}
+
+.cellName {
+  color: #333;
+}
+
+.cellDots {
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+  height: 1px;
+}
+
+.cellPrice {
+  white-space: nowrap;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.sectionButton {
+  margin-top: 8px;
+  padding: 10px 18px;
+  border-radius: 999px;
+  border: none;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.sectionButton:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.cta {
+  padding: 16px 0 0;
+}
+
+.ctaCard {
+  margin-top: 24px;
+  padding: 24px 20px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #41543f, #93a37a);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ctaText h2 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.ctaText p {
+  font-size: 15px;
+  opacity: 0.9;
+}
+
+.ctaForm {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr auto;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 999px;
+  border: none;
+  font-size: 14px;
+}
+
+.input::placeholder {
+  color: #999;
+}
+
+.ctaButton {
+  padding: 10px 20px;
+  border-radius: 999px;
+  border: none;
+  background: #fff;
+  color: #41543f;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.ctaButton:hover {
+  background-color: #f4f7f0;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.notice {
+  grid-column: 1 / -1;
+  font-size: 11px;
+  line-height: 1.4;
+  opacity: 0.8;
+}
+
+@media (max-width: 900px) {
+  .ctaForm {
+    grid-template-columns: 1fr;
+  }
+
+  .ctaButton {
+    width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding: 40px 0 24px;
+  }
+
+  .title {
+    font-size: 26px;
+  }
+
+  .sectionCard {
+    padding: 18px 16px;
+  }
+
+  .row {
+    grid-template-columns: 1fr auto;
+    row-gap: 4px;
+  }
+
+  .cellDots {
+    display: none;
+  }
+
+  .cellPrice {
+    justify-self: flex-start;
+  }
+}
+
+

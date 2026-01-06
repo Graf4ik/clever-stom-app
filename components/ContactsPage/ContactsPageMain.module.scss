@@ -1,0 +1,268 @@
+.contacts {
+  margin-top: 80px;
+  padding-bottom: 80px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.hero {
+  padding: 40px 0 24px;
+  background: linear-gradient(135deg, #f6f9f4, #ffffff);
+}
+
+.title {
+  font-size: 36px;
+  line-height: 1.2;
+  margin-bottom: 16px;
+  color: var(--primary-color);
+}
+
+.subtitle {
+  max-width: 720px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.infoSection {
+  padding: 24px 0 16px;
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 24px 20px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.04);
+}
+
+.cardTitle {
+  font-size: 20px;
+  margin-bottom: 16px;
+  color: var(--primary-color);
+}
+
+.cardRow {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 12px;
+}
+
+.label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #999;
+}
+
+.value {
+  font-size: 15px;
+  color: #333;
+}
+
+.value:hover {
+  text-decoration: underline;
+}
+
+.messengers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 16px 0;
+}
+
+.messengerBtn,
+.messengerBtnSecondary {
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.messengerBtn {
+  background: #25d366;
+  color: #fff;
+}
+
+.messengerBtnSecondary {
+  background: #229ed9;
+  color: #fff;
+}
+
+.messengerBtn:hover,
+.messengerBtnSecondary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.primaryBtn {
+  margin-top: 8px;
+  padding: 12px 20px;
+  border-radius: 999px;
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.primaryBtn:hover {
+  background: var(--secondary-color);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.howTo {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 20px 18px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.03);
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.routeLink {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+.mapSection {
+  padding: 16px 0 24px;
+}
+
+.mapTitle {
+  font-size: 22px;
+  margin-bottom: 12px;
+  color: var(--primary-color);
+}
+
+.mapWrapper {
+  width: 100%;
+  height: 420px;
+  margin-top: 8px;
+}
+
+.mapFrame {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.cta {
+  padding: 16px 0 0;
+}
+
+.ctaCard {
+  margin-top: 24px;
+  padding: 24px 20px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #41543f, #93a37a);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ctaText h2 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.ctaText p {
+  font-size: 15px;
+  opacity: 0.9;
+}
+
+.ctaForm {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr auto;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 999px;
+  border: none;
+  font-size: 14px;
+}
+
+.input::placeholder {
+  color: #999;
+}
+
+.ctaButton {
+  padding: 10px 20px;
+  border-radius: 999px;
+  border: none;
+  background: #fff;
+  color: #41543f;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.ctaButton:hover {
+  background-color: #f4f7f0;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.notice {
+  grid-column: 1 / -1;
+  font-size: 11px;
+  line-height: 1.4;
+  opacity: 0.85;
+}
+
+@media (max-width: 1024px) {
+  .infoGrid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 26px;
+  }
+
+  .ctaForm {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .ctaButton {
+    width: 100%;
+  }
+
+  .mapWrapper {
+    height: 320px;
+  }
+}
+
+

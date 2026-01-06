@@ -1,0 +1,283 @@
+.team {
+  margin-top: 80px;
+  padding-bottom: 80px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.hero {
+  padding: 64px 0 32px;
+  background: linear-gradient(135deg, #f6f9f4, #ffffff);
+}
+
+.title {
+  font-size: 36px;
+  line-height: 1.2;
+  margin-bottom: 16px;
+  color: var(--primary-color);
+}
+
+.subtitle {
+  max-width: 720px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.gridSection {
+  padding: 32px 0 16px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 18px 16px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.04);
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.avatarPlaceholder {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #41543f, #93a37a);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.cardBody {
+  flex: 1;
+}
+
+.name {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.role {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 4px;
+}
+
+.experience {
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 8px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.tag {
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #f1f4ec;
+  font-size: 12px;
+  color: #41543f;
+}
+
+.cardButton {
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.cardButton:hover {
+  background: var(--secondary-color);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.infoSection {
+  padding: 16px 0 16px;
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.sectionTitle {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+.infoText p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.ratings {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 18px 16px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.04);
+}
+
+.ratings h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.ratings ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.ratings li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.ratings li strong {
+  font-weight: 600;
+}
+
+.ratingsNote {
+  font-size: 12px;
+  color: #777;
+  line-height: 1.5;
+}
+
+.cta {
+  padding: 16px 0 0;
+}
+
+.ctaCard {
+  margin-top: 24px;
+  padding: 24px 20px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #41543f, #93a37a);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ctaText h2 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.ctaText p {
+  font-size: 15px;
+  opacity: 0.9;
+}
+
+.ctaForm {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr auto;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 999px;
+  border: none;
+  font-size: 14px;
+}
+
+.input::placeholder {
+  color: #999;
+}
+
+.ctaButton {
+  padding: 10px 20px;
+  border-radius: 999px;
+  border: none;
+  background: #fff;
+  color: #41543f;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.ctaButton:hover {
+  background-color: #f4f7f0;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.notice {
+  grid-column: 1 / -1;
+  font-size: 11px;
+  line-height: 1.4;
+  opacity: 0.85;
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .infoGrid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 40px 0 24px;
+  }
+
+  .title {
+    font-size: 26px;
+  }
+
+  .grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .ctaForm {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .ctaButton {
+    width: 100%;
+  }
+}
+
+
